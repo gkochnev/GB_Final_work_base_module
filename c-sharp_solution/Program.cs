@@ -24,7 +24,12 @@ string[] ArrayFilter(string[] myArray, int stringLength)
 
 int maxStringLength = 3;
 string[] myArray1 = {"hello", "2", "world", ":-)"};
-string[] myArray2 = {"1234", "1567", "- 2", "That's Jason Bourne"};
+string[] myArray2 = {"1234", "1567", "-2", "That's Jason Bourne"};
 string[] myArray3 = {"Russia", "Denmark", "Kazan"};
 
+Array.ForEach(ArrayFilter(myArray1, maxStringLength), (str) => Console.Write($"{str} "));
+Console.WriteLine();
 Array.ForEach(ArrayFilter(myArray2, maxStringLength), (str) => Console.Write($"{str} "));
+Console.WriteLine();
+Array.ForEach(ArrayFilter(myArray3, maxStringLength), (str) => Console.Write($"{str} "));
+Console.WriteLine();
